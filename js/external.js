@@ -76,12 +76,9 @@ function calculate() {
 }
 function clr() {
     // alert("ok");
-    var disp_year = document.getElementById("disp_year");
-    var disp_month = document.getElementById("disp_month");
-    var disp_days = document.getElementById("disp_days");
-
-    disp_year.innerHTML = "";
-    disp_month.innerHTML = "";
-    disp_days.innerHTML = "";
+	var container = document.getElementById("reportcontainer");
+	while (container.hasChildNodes()) {
+		container.removeChild(container.lastChild);
+	}
 
 }
