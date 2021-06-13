@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>welcome to age calculator app</title>
+      <!--Bootstrap attachment-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!--External js attachment-->
+      <script src="js/external.js"></script>
+      <!--external css attachment-->
+      <link href="css/style.css" rel="stylesheet">
+      </script>
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4" id="block">
+               <form method="post" >
+                  <div class="panel panel-default">
+                     <div class="panel-heading">
+                        <h3>EMI calculator</h3>
+                     </div>
+                     <br>
+                     <div class="panel-body">
+                        <h4>Input details</h4>
+                        <label class="head">Loan Amount</label>
+						<input type="Number" id="loanamount" name="loanamount">
+						<br>
+                        <label class="head">Rate Of Intrest Yearly</label>
+						<input type="Number"  placeholder="0.00" id="intrestrate" name="intrestrate" min="4" max="60">
+						<br>
+						<label class="head">Loan duration in months</label>
+						<input type="Number" id="loanduration" name="loanduration">
+						<br>
+						<label class="head">Months Paid</label>
+						<input type="Number" id="monthpaid" name="monthpaid">
+                        <br><br>
+						<input type="button" id="createchart" onclick="return fun();" value="Generate Chart" class="btn btn-success">
+                        <h4>Monthly Report</h4>
+						<div id="reportcontainer"/>
+                     </div>
+                  </div>
+               </form>
+            </div>
+            <div class="col-md-4">
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
+
